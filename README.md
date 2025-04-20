@@ -14,29 +14,46 @@
 
 - 🛡️ AMSI & Defender Bypass  
 - 🔐 XOR + Base64 Multi-Stage Encryption  
-- 🧬 Function and Variable Name Obfuscation  
+- 🧬 Function and Variable Name and backticks and lot of Obfuscation  
 - 📦 Multi-layer Payload Staging  
-- 🧼 Minimal Disk Forensic Footprint  
-- 🔑 Custom XOR Key Encryption  
-- 🧠 Executes Fully In-Memory  
-- 📁 Customizable Windows Path for Payload Placement  
-
+- 🔑 Custom XOR Key Encryption   
 ---
 
 ## 🚀 Usage
 
 ```bash
-python3 narashima.py \
-  --target your_payload.ps1 \
-  --output /tmp/Narashima/payload.txt \
-  --key YOUR_SECRET_KEY \
-  --win-path C:\\Windows\\Tasks
+./narashima -o /tmp/rev.ps1 -s -d -n -x -i -f -b --decimal -l 2 --key "secret123" Invoke-PowerShellTcp.ps1
 ```
 
-- `--target`: Your raw PowerShell payload  
-- `--output`: Where the final obfuscated payload should be written  
-- `--key`: XOR key used for encryption/decryption  
-- `--win-path`: Target path on Windows system for launcher/payload files  
+### 🧩 Available Options
+
+Flags
+`target` -	Your raw PowerShell payload,
+`-o, --output` - Output path for the final obfuscated/encrypted payload,
+`-key, --key`	- XOR encryption key (default: NarashimaKey),
+`-l, --level` -	String obfuscation level (0 = Random, 1-5 = Increasing intensity),
+`-s, --strings` -	Enable string obfuscation,
+`-d, --data-types` -	Obfuscate common PowerShell data types (arrays, booleans, etc.),
+`-n, --nishang`	- Obfuscate known patterns in Nishang payloads,
+`-c, --comments` -	Inject misleading/random comments,
+`-x, --hex-ip` -	Convert IP addresses into hexadecimal format,
+`-i, --random-spaces` -	Randomize indentation and whitespace,
+`-f, --functions` -	Obfuscate function names and structures,
+`-b, --use-backticks`	- Use PowerShell backticks for breaking strings,
+`--decimal`	- Encode final payload as decimal values,
+
+---
+
+## 🛡 Why a Compiled Binary?
+
+Shipping Narashima as an executable helps protect the underlying techniques from reverse engineering, signature creation, and sandbox analysis.
+Even if your payload is fully obfuscated and encrypted, making the source code publicly available allows defenders to:
+
+- Understand your obfuscation and encryption logic
+- Create detection signatures or YARA rules
+- Upload samples to VirusTotal and reverse the pattern
+
+This allows red teamers to safely use zero-detection payloads without exposing the tool’s inner workings to defenders. This adds an additional layer of protection, making reverse engineering and static analysis much harder.
 
 ---
 
