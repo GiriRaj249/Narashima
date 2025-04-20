@@ -17,6 +17,7 @@
 - 🧬 Function and Variable Name and backticks and lot of Obfuscation  
 - 📦 Multi-layer Payload Staging  
 - 🔑 Custom XOR Key Encryption   
+- Function Mapping
 ---
 
 ![Narashima Demo](./assets/narashima.gif)
