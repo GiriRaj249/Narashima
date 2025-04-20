@@ -75,11 +75,11 @@ This allows red teamers to safely use zero-detection payloads without exposing t
 ```
 cmd.ps1 
    ↓
-launcher.ps1 
+file.ps1 
    ↓
-launcher.txt ( obfuscated + Base64 encoded script) 
+god.txt ( obfuscated + Base64 encoded script) 
    ↓
-payload.txt (obfuscation + Encrypted + Base64 ) 
+god-killer.txt (obfuscation + Encrypted + Base64 ) 
    ↓
 Reverse Shell
 ```
