@@ -24,7 +24,7 @@
 ```bash
 chmod +x narashima
 
-./narashima -o /tmp/rev.ps1 -s -d -n -x -i -f -b --decimal -l 2 --random-backticks  --key "secret123" Invoke-PowerShellTcp.ps1
+./narashima -o /tmp/rev.ps1 -s -d -n -x -i -f -b --decimal -l 2 --random-backticks  --key "secret123" /shell/Invoke-PowerShellTcp.ps1
 ```
 
 ### 🧩 Available Options
@@ -46,7 +46,12 @@ Flags
 --random-backticks  - enable random backticks
 
 ---
+## Important notification
 
+For now, I have shared the payload, which will be working fine under the /shell directory (This is Narashima version-1 and still under development)
+
+
+---
 ## 🛡 Why a Compiled Binary?
 
 Shipping Narashima as an executable helps protect the underlying techniques from reverse engineering, signature creation, and sandbox analysis.
