@@ -19,6 +19,8 @@
 - 🔑 Custom XOR Key Encryption   
 ---
 
+![Narashima Demo](./assets/narashima.gif)
+
 ## 🚀 Usage
 
 ```bash
