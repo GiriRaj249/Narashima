@@ -113,9 +113,17 @@ Any **unauthorized usage** against systems you do not own or have permission to 
 
 ## 🙏 Credits
 
-Built with ❤️ by offensive security researchers for the red teaming and infosec community.  
-Inspired by **Narasimha**, the fierce and powerful protector in mythology — half-lion, half-man, full destruction.
+Built with ❤️ for offensive security researchers for the red teaming and infosec community.
 
+Inspired by Narasimha, the fierce and powerful protector in mythology — half-lion, half-man, full destruction.
+
+Special thanks to the following legends whose work inspired the creation of Narashima:
+- @klezVirus for Chameleon — a brilliant resource in payload obfuscation and evasion.
+- @tokyoneon for Chimera — a solid foundation for offensive tradecraft and creative payload delivery.
+
+```
+Respect to the community. This project stands on the shoulders of giants.
+```
 ---
 
 ## 📎 License
