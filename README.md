@@ -22,6 +22,8 @@
 ## 🚀 Usage
 
 ```bash
+chmod +x narashima
+
 ./narashima -o /tmp/rev.ps1 -s -d -n -x -i -f -b --decimal -l 2 --random-backticks  --key "secret123" Invoke-PowerShellTcp.ps1
 ```
 
