@@ -45,7 +45,8 @@ Flags
 `-f, --functions` -	Obfuscate function names and structures,
 `-b, --use-backticks`	- Use PowerShell backticks for breaking strings,
 `--decimal`	- Encode final payload as decimal values,
---random-backticks  - enable random backticks
+`-j` - Obfuscate True or False variables
+`--random-backticks`  - enable random backticks
 
 ---
 ## Important notification
