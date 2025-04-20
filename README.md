@@ -22,7 +22,7 @@
 ## 🚀 Usage
 
 ```bash
-./narashima -o /tmp/rev.ps1 -s -d -n -x -i -f -b --decimal -l 2 --key "secret123" Invoke-PowerShellTcp.ps1
+./narashima -o /tmp/rev.ps1 -s -d -n -x -i -f -b --decimal -l 2 --random-backticks  --key "secret123" Invoke-PowerShellTcp.ps1
 ```
 
 ### 🧩 Available Options
@@ -41,6 +41,7 @@ Flags
 `-f, --functions` -	Obfuscate function names and structures,
 `-b, --use-backticks`	- Use PowerShell backticks for breaking strings,
 `--decimal`	- Encode final payload as decimal values,
+--random-backticks  - enable random backticks
 
 ---
 
