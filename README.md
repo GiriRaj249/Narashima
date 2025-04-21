@@ -12,7 +12,7 @@
 
 ## 🔥 Key Features
 
-- 🛡️ AMSI & Defender Bypass  
+- 🛡️ AMSI & Defender Bypass, AV Bypass with 0 Detection rate  
 - 🔐 XOR + Base64 Multi-Stage Encryption  
 - 🧬 Function and Variable Name and backticks and lot of Obfuscation  
 - 📦 Multi-layer Payload Staging  
