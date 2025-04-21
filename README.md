@@ -22,6 +22,13 @@
 
 ![Narashima Demo](./assets/narashima.gif)
 
+
+## Virustotal Results
+
+![file-ps1](./assets/file_ps1_virustotal.png)
+![god](./assets/god_txt_virustotal.png)
+![god-killer](./assets/god_killer_txt_virustotal.png)
+
 ## 🚀 Usage
 
 ```bash
