@@ -42,22 +42,21 @@ powershell -ep bypass ./file.ps1
 
 ### 🧩 Available Options
 
-Flags
-`target` -	Your raw PowerShell payload,
-`-o, --output` - Output path for the final obfuscated/encrypted payload,
-`-key, --key`	- XOR encryption key (default: NarashimaKey),
-`-l, --level` -	String obfuscation level (0 = Random, 1-5 = Increasing intensity),
-`-s, --strings` -	Enable string obfuscation,
-`-d, --data-types` -	Obfuscate common PowerShell data types (arrays, booleans, etc.),
-`-n, --nishang`	- Obfuscate known patterns in Nishang payloads,
-`-c, --comments` -	Inject misleading/random comments,
-`-x, --hex-ip` -	Convert IP addresses into hexadecimal format,
-`-i, --random-spaces` -	Randomize indentation and whitespace,
-`-f, --functions` -	Obfuscate function names and structures,
-`-b, --use-backticks`	- Use PowerShell backticks for breaking strings,
-`--decimal`	- Encode final payload as decimal values,
-`-j` - Obfuscate True or False variables
-`--random-backticks`  - enable random backticks
+- `target` – Your raw PowerShell payload  
+- `-o, --output` – Output path for the final obfuscated/encrypted payload  
+- `--key` – XOR encryption key (default: NarashimaKey)  
+- `-l, --level` – String obfuscation level (0 = Random, 1–5 = Increasing intensity)  
+- `-s, --strings` – Enable string obfuscation  
+- `-d, --data-types` – Obfuscate common PowerShell data types (arrays, booleans, etc.)  
+- `-n, --nishang` – Obfuscate known patterns in Nishang payloads  
+- `-c, --comments` – Inject misleading/random comments  
+- `-x, --hex-ip` – Convert IP addresses into hexadecimal format  
+- `-i, --random-spaces` – Randomize indentation and whitespace  
+- `-f, --functions` – Obfuscate function names and structures  
+- `-b, --use-backticks` – Use PowerShell backticks for breaking strings  
+- `--decimal` – Encode final payload as decimal values  
+- `-j` – Obfuscate True or False variables  
+- `--random-backticks` – Enable random backticks
 
 ---
 ## Important notification
