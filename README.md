@@ -57,6 +57,8 @@ powershell -ep bypass ./file.ps1
 - `--decimal` – Encode final payload as decimal values  
 - `-j` – Obfuscate True or False variables  
 - `--random-backticks` – Enable random backticks
+- `--randomization-type` – {r,d,h} Type of randomization (r: Random, d: Dictionary, h: Hybrid)
+- `-F` - Function Mapping (for understanding the obfuscated functions)
 
 ---
 ## Important notification
