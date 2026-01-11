@@ -1,4 +1,4 @@
-# 🕉️ Narashima - The Stealth God of Payload Delivery
+# Narashima - The Stealth God of Payload Delivery
 
 > Advanced PowerShell payload obfuscation and evasion framework for red teamers.
 
